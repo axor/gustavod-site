@@ -41,7 +41,13 @@
 <body>
   <div class="wrap">
     <h1>gustavod</h1>
-    <a href="mailto:contact@gustavod.com">contact@gustavod.com</a>
+    <a id="c" href="#"></a>
   </div>
+  <script>
+    var u = "contact", d = "gustavod.com";
+    var el = document.getElementById("c");
+    el.href = "mailto:" + u + "@" + d;
+    el.textContent = u + " [at] " + d.replace(".", " [dot] ");
+  </script>
 </body>
 </html>
